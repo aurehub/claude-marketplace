@@ -1,0 +1,29 @@
+{
+  "name": "aurehub-marketplace",
+  "owner": {
+    "name": "AureHub",
+    "url": "https://github.com/aurehub"
+  },
+  "description": "Marketplace index for AureHub Claude Code plugins",
+  "plugins": [
+    {
+      "name": "aurehub-agents",
+      "description": "AureHub agents plugin (Claude target in repo subdirectory)",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/aurehub/agents.git",
+        "path": "claude",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "aurehub-skills",
+      "description": "AureHub skills plugin",
+      "source": {
+        "source": "github",
+        "repo": "aurehub/skills",
+        "ref": "main"
+      }
+    }
+  ]
+}
